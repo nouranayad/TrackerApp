@@ -30,13 +30,18 @@
     "xrm-webapi": "^7.1.3"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"cd backend && nodemon app\"",
+    "start": "concurrently \"react-scripts start\" \"cd backend && nodemon server\"",
+
     "build": "webpack",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server-dependencies": "npm install --prefix backend",
     "client-dependencies": "npm install",
-    "install-all-deps": "concurrently \"npm run server-dependencies\" \"npm run client-dependencies\""
+    "install-all-deps": "concurrently \"npm run server-dependencies\" \"npm run client-dependencies\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+
+    
+
   },
   "proxy": "http://localhost:5000",
   "eslintConfig": {
