@@ -34,8 +34,9 @@
     "build": "webpack",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server-install": "npm install --prefix backend"
-
+    "server-dependencies": "npm install --prefix backend",
+    "client-dependencies": "npm install",
+    "install-all-deps": "concurrently \"npm run server-dependencies\" \"npm run client-dependencies\""
   },
   "proxy": "http://localhost:5000",
   "eslintConfig": {
