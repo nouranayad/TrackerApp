@@ -31,7 +31,7 @@
   },
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"cd backend && nodemon app\"",
-    "build": "react-scripts build",
+    "build": "webpack",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
