@@ -7,3 +7,5 @@ Steps to run the app:
 3) npm i
 4) cd ..
 5) npm start
+
+This is the link to the deployed website : https://trackerfrontend157.herokuapp.com/
