@@ -63,7 +63,7 @@ const [emailError,setEmailError]=useState(false)
    const [submited,setSubmited]=useState(false)
    const [temp, setTemp] = React.useState('');
 
-const x;
+
    const handleChange = (event) => {
     setTemp(event.target.value);
   };
